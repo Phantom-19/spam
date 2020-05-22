@@ -1,25 +1,17 @@
 <?php
 $banner = "\e[36;1m                                                                                 
-                                                                                 
-           #         ######   
-           #    #             
-  ######   #    #  ########## 
-           #    #  #        # 
-           #######        ##  
-##########      #       ##    
-                #     ##      
-                              
-                                                                                 
-[#] Facebook Bot Comment [#]    
+____ ___      ___  ____ ___ 
+|___ |__]     |__] |  |  |  
+|    |__] ___ |__] |__|  |  
+                                                                                                                                             
+[#] Facebook Commentaire automatiser [#]    
                                    
-Coded by : Revan AR                  
-Team     : IndoSec                   
-Github   : https//github.com/revan-ar/\n\n\e[0;1m";
+Codeer par : Faxel  \n\n\e[0;1m";
 sleep(3);
 echo $banner;
 sleep(2);
 
-echo ">>> Access Token : ";
+echo ">>> Jeton d'acces : ";
 $toket = trim(fgets(STDIN));
 sleep(2);
 echo "\n(Pour les retours a la ligne utiliser la balise (br))\n";
