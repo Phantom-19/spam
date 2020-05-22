@@ -5,7 +5,7 @@ _  _ ____ _ _    ____    ____ ____ _  _
 |  | |  | | |___ ___]    |__] |___ | \|                                                                                                                        
    [#] Générateur d'e-mails [#]    
                                    
-   [#] Author : Mr Hacker_K [#]\n\n\e[0;1m";
+   [#] Auteur : Faxel      [#]\n\n\e[0;1m";
 
 
 	echo $banner."\n";
