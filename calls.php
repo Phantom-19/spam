@@ -103,6 +103,7 @@ class farce{
 		}
 	}
 }
+clear
 echo "#################################\n# Auteur : Faxel | Mr Hacker_K #\n#################################\n"; 
 echo "?Numero			";
 $no = obtenir();
