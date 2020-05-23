@@ -85,7 +85,7 @@ class farce{
 	}
 	public function run(){
 		while(true){
-			echo "?Loop(o/n)		";
+			echo "[?] Avec boucle (o/n) : ";
 			$loop = $this->obtenir();
 			if($loop=="o" OR $loop=="n"){
 				break;
@@ -105,7 +105,7 @@ class farce{
 }
 clear
 echo "#################################\n# Auteur : Faxel | Mr Hacker_K #\n#################################\n"; 
-echo "[++] Numéro de votre cible : ";
+echo "[++] Numéro de votre cible :  ";
 $no = obtenir();
 $n = new farce($no);
 $n->run();
