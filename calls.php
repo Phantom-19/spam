@@ -1,17 +1,17 @@
 <?php
-function get(){
+function obtenir(){
 	return trim(fgets(STDIN));
 }
-class prankCall{
+class farce{
 	public function __construct($no){
 		$this->number = $no;
 	}
-	private function get(){
+	private function obtenir(){
 		return trim(fgets(STDIN));
 	}
 	private function correct($no){
-		$cek = substr($no,0,2);
-		if($cek=="08"){
+		$pt = substr($no,0,2);
+		if($pt=="08"){
 			$no = "225".substr($no,1);
 		}
 		return $no;
@@ -86,7 +86,7 @@ class prankCall{
 	public function run(){
 		while(true){
 			echo "?Loop(o/n)		";
-			$loop = $this->get();
+			$loop = $this->obtenir();
 			if($loop=="o" OR $loop=="n"){
 				break;
 			}else{
@@ -96,15 +96,15 @@ class prankCall{
 		}
 		if($loop=="y"){
 			echo "?Plusieurs			";
-			$many = $this->get();
+			$many = $this->obtenir();
 			$this->loop($many);
 		}else{
 			$this->faxel();
 		}
 	}
 }
-echo "#################################\n# Copyright : Faxel | Mr Hacker_K #\n#################################\n"; 
+echo "#################################\n# Auteur : Faxel | Mr Hacker_K #\n#################################\n"; 
 echo "?Numero			";
-$no = get();
-$n = new prankCall($no);
+$no = obtenir();
+$n = new farce($no);
 $n->run();
